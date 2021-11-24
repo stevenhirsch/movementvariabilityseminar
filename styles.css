@@ -1,5 +1,16 @@
+/* Declaring Default Global Variables */
+
+:root {
+  --mainfontfamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+html {
+
+}
+
+
 body {
-  font-family: sans-serif;
+  font-family: var(--mainfontfamily);
   margin: 0;
   padding: 0;
 }
@@ -33,18 +44,32 @@ div.mainLanding {
 }
 
 .centered h1 {
-  font-size: 80px;
+  font-size: 120px;
+}
+
+.centered h3 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .centered h1 {
+    font-size: 120px;
+  }
+
+  .centered h3{
+    font-size: 40px;
+  }
 }
 
 .button {
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 50px 2px;
   cursor: pointer;
   border-radius: 8px;
@@ -55,6 +80,13 @@ div.mainLanding {
   filter: brightness(75%);
 }
 
+@media screen and (max-width: 1200px) {
+  .button {
+    padding: 40px 120px;
+    font-size: 40px;
+  }
+}
+
 /* Second Section */
 
 h2 {
@@ -62,6 +94,15 @@ h2 {
   padding-top: 30px;
   font-size: 45px;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 65px;
+  }
+}
+
 .section2{
   text-align: center;
   background: #121212;
@@ -75,6 +116,15 @@ h2 {
   margin:0 auto;
   margin-bottom: 2.5em;
   font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .text {
+    width: 70%;
+    font-size: 30px;
+  }
 }
 
 /* Third Section */
@@ -104,8 +154,23 @@ h2 {
   font-size: 30px;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .boxes h3 {
+    padding-top: 1em;
+    font-size: 45px;
+  }
+}
+
 .boxes p {
   font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .boxes p {
+    margin-top: -15px;
+    font-size: 30px;
+  }
 }
 
 .box1, .box2, .box3, .box4{
@@ -141,6 +206,14 @@ h2 {
 }
 
 
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -168,12 +241,17 @@ h2 {
   color: grey;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
+.section4 p {
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .section4 p {
+    font-size: 30px;
   }
 }
+
 /*
 img{
   border-radius: 50%;
@@ -211,6 +289,13 @@ img{
   filter: brightness(75%);
 }
 
+@media screen and (max-width: 1200px) {
+  .button2{
+    padding: 30px 64px;
+    font-size: 60px;
+  }
+}
+
 .section6{
   text-align: center;
   background: #121212;
@@ -223,6 +308,13 @@ img{
 
 .section6 p {
   text-align: center;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section6 p {
+    font-size: 10px;
+  }
 }
 
 .section6 a {
