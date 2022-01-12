@@ -188,7 +188,7 @@ h2 {
   padding-bottom: 10px;
 }
 
-.section4 a:link, a:visited, a:hover, a:active{
+.section4 a:link {
   color: #e50000;
 }
 
